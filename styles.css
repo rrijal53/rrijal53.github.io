@@ -1,6 +1,9 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #e9ecef;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,23 +12,71 @@ body {
     height: 100vh;
 }
 
+/* Main container */
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     max-width: 600px;
-    width: 100%;
-}
-
-h1 {
-    margin-bottom: 20px;
+    width: 90%;
     text-align: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
+/* Subtle hover effect */
+.container:hover {
+    transform: translateY(-3px);
 }
+
+/* Title */
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Preformatted text box */
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Smooth scrolling for long pre elements */
+pre::-webkit-scrollbar {
+    height: 6px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    pre {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
