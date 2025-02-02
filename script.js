@@ -1,10 +1,11 @@
 const jsonData = {
     "name": "Roshan Rijal",
+    "title": "Software Engineer",
+    "about": "I build high-performance backend systems that never go down... unless they do.",
     "email": "rijalroshan94@gmail.com",
     "linkedin": "https://www.linkedin.com/in/roshan-rijal-4219629a/",
     "github": "https://github.com/rrijal53",
     "disclaimer": "No frontend elements were harmed in the making of this website.",
-
 };
 
 document.addEventListener('DOMContentLoaded', () => {
